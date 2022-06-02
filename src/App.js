@@ -17,6 +17,7 @@ function App() {
         <Route path="/DarkSide" element={<DarkSide />} />
         <Route path="/LightSide" element={<LightSide />} />
         <Route path="/Teaser" element={<Teaser />} />
+        <Route path="/Questions" element={<Questions />}/>
       </Routes>
     </div>
   );

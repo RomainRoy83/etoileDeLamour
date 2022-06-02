@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, {useState} from 'react';
 import '../css/Questions.css';
 
@@ -112,8 +113,9 @@ return (
     {showScore ? (
       <div className='score-section'>
         Vous avez obtenu {score} points sur {quizz.length} ! 
-        {score >= 6 ? <button> Light cruise </button> : <button className='dark-cruise-button'> Dark cruise </button>} 
+        {score >= 6 ?<Link to="/LightSide"> <button> Light cruise </button></Link> : <Link to="/DarkSide"><button className='dark-cruise-button'> Dark cruise </button></Link>} 
       </div>
+      
     ) : (
       <>
         <div className='question-section'>
