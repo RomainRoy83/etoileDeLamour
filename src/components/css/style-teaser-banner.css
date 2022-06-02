@@ -7,23 +7,23 @@
     box-sizing: border-box;
 }
 
-.banner {
+.tease-banner {
     background: url('../assets/space.jpg') no-repeat;
     background-size: cover;
     padding-top: 47%;
     font-family: 'Sucrose Bold Two';
 }
 
-.banner img {
+.tease-banner img {
     position: absolute;
     top: 0;
     right: 0;
     width: 100%;
 }
 
-.banner h1 { 
+.tease-banner h1 { 
     position: fixed;
-    color: white;
+    color: rgb(230, 230, 230);
     top: 2rem;
     right: 4rem;
     font-size: 6vw;
@@ -32,7 +32,7 @@
     text-align: center;
 }
 
-.banner h1 span {
+.tease-banner h1 span {
     display: block;
     font-size: 4vw;
 }
