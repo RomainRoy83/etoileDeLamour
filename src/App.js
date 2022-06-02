@@ -6,6 +6,7 @@ import DarkSide from "./screens/js/DarkSide";
 import LightSide from "./screens/js/LightSide";
 import Teaser from "./screens/js/Teaser";
 import './App.css';
+import Questions from './components/js/Questions.js';
 
 function App() {
   return (
