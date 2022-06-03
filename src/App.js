@@ -1,17 +1,23 @@
+import logo from './logo.svg';
+
 import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/js/Header";
 import Home from "./screens/js/HomePage";
+import HomepageBanner from './components/js/HomepageBanner';
 import DarkSide from "./screens/js/DarkSide";
+import Questions from './components/js/Questions.js';
 import LightSide from "./screens/js/LightSide";
 import Teaser from "./screens/js/Teaser";
 import './App.css';
-import Questions from './components/js/Questions.js';
+
 
 function App() {
   return (
     <div className="App">
+
       <Header />
+      <HomepageBanner />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/DarkSide" element={<DarkSide />} />
