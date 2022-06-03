@@ -1,11 +1,16 @@
-import logo from './logo.svg';
-import BannerDark from './components/js/BannerDark' 
+
+import Banner from './components/js/Banner'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <BannerDark />
+      <Banner type={'light'} />
+      <p>Lodlfgk,dflkj,gd gifjdgjkhdfglkj sdrlkgjfdlkjngkdjgkfdjgffkgjfdkjgkfdngknfdhgjklbn</p>
+      <p>Lodlfgk,dflkj,gd gifjdgjkhdfglkj sdrlkgjfdlkjngkdjgkfdjgffkgjfdkjgkfdngknfdhgjklbn</p>
+      <p>Lodlfgk,dflkj,gd gifjdgjkhdfglkj sdrlkgjfdlkjngkdjgkfdjgffkgjfdkjgkfdngknfdhgjklbn</p>
+      <p>Lodlfgk,dflkj,gd gifjdgjkhdfglkj sdrlkgjfdlkjngkdjgkfdjgffkgjfdkjgkfdngknfdhgjklbn</p>
+      <p>Lodlfgk,dflkj,gd gifjdgjkhdfglkj sdrlkgjfdlkjngkdjgkfdjgffkgjfdkjgkfdngknfdhgjklbn</p>
     </div>
   );
 }
