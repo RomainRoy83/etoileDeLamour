@@ -10,34 +10,67 @@ function CruisersProfiles(props) {
       .then((res) => setCharacters(res), []);
   });
 
+  // const profileBtn = document.querySelector(".profile-btn");
+
+  const handleClick = (elt) => {
+    const profile = document.getElementById(elt);
+    profile.classList.toggle("inactif");
+  };
+
   return (
-    <div className="chara-container">
-      {characters
+    <div className="container-global">
+      <div className="chara-container">
+        {characters
 
-        .filter((character) => character.affiliations.includes(props.version))
+          .filter((character) => character.affiliations.includes(props.version))
 
-        .map((character) => {
-          if (
-            props.version === "Resistance" ||
-            !character.affiliations.includes("Resistance")
-          ) {
-            return (
-              <div>
-                <div className="chara-img-container">
-                  <img
-                    className="chara-img"
-                    src={character.image}
-                    alt={character.name}
-                  />
+          .map((character, index) => {
+            if (
+              props.version === "Resistance" ||
+              !character.affiliations.includes("Resistance")
+            ) {
+              return (
+                <div key={index}>
+                  <div className="chara-img-container">
+                    <img
+                      className="chara-img"
+                      src={character.image}
+                      alt={character.name}
+                    />
+                  </div>
+                  <p className="chara-name">{character.name}</p>
+                  <a
+                    className="coeur profile-btn"
+                    onClick={() => {
+                      handleClick(character.id);
+                    }}
+                  >
+                    En savoir plus
+                  </a>
+
+                  <div className=" profile-card inactif" id={character.id}>
+                    <h3>Nom : {character.name}</h3>
+                    <h4>Taille : {character.height}</h4>
+                    <h4>Poids : {character.mass}</h4>
+                    <h4>Genre : {character.gender}</h4>
+                    <h4>Patrie :{character.homeworld}</h4>
+                    <h4>Wikipedia :{character.wiki}</h4>
+                    <a href="{character.wiki}">Page Wikipedia</a>
+                    <h4>Date de naissance :{character.born}</h4>
+                    <h4>Lieu de Naissance :{character.bornLocation}</h4>
+                    <h4>Espèce :{character.species}</h4>
+                    <h4>Couleur de cheveux :{character.hairColor}</h4>
+                    <h4>Couleur des yeux :{character.eyeColor}</h4>
+                    <h4>Couleur de peau :{character.skinColor}</h4>
+                    <h4>Affiliations :{character.affiliations}</h4>
+                    <h4>Maîtres :{character.masters}</h4>
+                    <h4>{character.formerAffiliations}</h4>
+                  </div>
                 </div>
-                <p className="chara-name">{character.name}</p>
-                <a href="#" className="coeur profile-btn" id={character.id}>
-                  En savoir plus
-                </a>
-              </div>
-            );
-          }
-        })}
+              );
+            }
+          })}
+      </div>
     </div>
   );
 }

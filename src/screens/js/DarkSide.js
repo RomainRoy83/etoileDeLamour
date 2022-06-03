@@ -1,5 +1,5 @@
+import React from "react";
 import CruisersProfiles from "../../components/js/CruisersProfiles";
-import "../css/CroisiereLove.css";
 
 function DarkSide() {
   return (

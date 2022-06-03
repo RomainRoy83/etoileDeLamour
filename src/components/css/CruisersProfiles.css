@@ -3,22 +3,40 @@
   height: 100%;
 }
 
+.inactif {
+  display: none;
+}
+
+.profile-card {
+  z-index: 10;
+  border: 1px red solid;
+  color: white;
+}
+.container-global {
+  background: url("https://image.winudf.com/v2/image/Y29tLkx3cE1hc3Rlci5Ta3kxNl9zY3JlZW5fMF90ZmFrYnFqbw/screen-0.jpg?fakeurl=1&type=.jpg");
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .chara-container {
   display: flex;
+  width: 70%;
   gap: 70px;
   flex-wrap: wrap;
   align-content: center;
 }
 
 .chara-img-container {
-  /* max-height: 300px;
-  max-width: 200px; */
+  max-height: 300px;
+  max-width: 200px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .chara-name {
   margin-bottom: 30px;
+  color: white;
 }
 
 .coeur {
