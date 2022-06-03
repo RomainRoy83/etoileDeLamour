@@ -1,9 +1,12 @@
-const LightSide = () => {
-    return (
-      <div className="LightSide">
-        <h1>Welcome to theLightSide  !</h1>
-      </div>
-    );
-  };
-  
-  export default LightSide;
+import React from "react";
+import CruisersProfiles from "../../components/js/CruisersProfiles";
+
+function LightSide() {
+  return (
+    <div className="CroisiereLove">
+      <CruisersProfiles version="Resistance" />
+    </div>
+  );
+}
+
+export default LightSide;
