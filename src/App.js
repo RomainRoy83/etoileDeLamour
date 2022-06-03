@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 
 import { Routes, Route } from "react-router-dom";
-
+import Activities from './components/js/Activities';
 import Header from "./components/js/Header";
 import Home from "./screens/js/HomePage";
 import HomepageBanner from './components/js/HomepageBanner';
@@ -15,16 +15,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-
-      <Header />
-      <HomepageBanner />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/DarkSide" element={<DarkSide />} />
-        <Route path="/LightSide" element={<LightSide />} />
-        <Route path="/Teaser" element={<Teaser />} />
-        <Route path="/Questions" element={<Questions />}/>
-      </Routes>
+      <Activities />
     </div>
   );
 }
