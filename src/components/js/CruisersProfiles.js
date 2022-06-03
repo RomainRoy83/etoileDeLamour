@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../css/CruisersProfiles.css";
 
 function CruisersProfiles(props) {
@@ -34,11 +35,11 @@ function CruisersProfiles(props) {
          return (
          <div key={index}>
             <div className="chara-img-container">
-            <img
+            <Link to={`/LightSide/${character.id}`}> <img
             className="chara-img"
             src={character.image}
             alt={character.name}
-            />
+            /></Link>
             </div>
             <p className="chara-name">{character.name}</p>
             <a className="coeur profile-btn" onClick={() => {handleClick(character.id)}} >
@@ -46,7 +47,7 @@ function CruisersProfiles(props) {
             </a>
            
 
-           <div className=" profile-card inactif" id={character.id}>
+           {/* <div className=" profile-card inactif" id={character.id}>
               <h3>Nom : {character.name}</h3>
               <h4>Taille : {character.height}</h4>
               <h4>Poids : {character.mass}</h4>
@@ -63,7 +64,7 @@ function CruisersProfiles(props) {
               <h4>Affiliations :{character.affiliations}</h4>
               <h4>Maîtres :{character.masters}</h4>
               <h4>{character.formerAffiliations}</h4>
-           </div>
+           </div> */}
           </div>
           )
         }

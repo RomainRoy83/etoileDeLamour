@@ -8,23 +8,25 @@ import HomepageBanner from './components/js/HomepageBanner';
 import DarkSide from "./screens/js/DarkSide";
 import Questions from './components/js/Questions.js';
 import LightSide from "./screens/js/LightSide";
+import DisplayCard from "./screens/js/DisplayCard";
 import Teaser from "./screens/js/Teaser";
+
 import './App.css';
-import LightSide from './screens/js/LightSide'
 
 
 function App() {
   return (
     <div className="App">
-      <LightSide />
+      {/* <LightSide /> */}
         
 
-      <Header />
-      <HomepageBanner />
+      {/* <Header /> */}
+      {/* <HomepageBanner /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/DarkSide" element={<DarkSide />} />
         <Route path="/LightSide" element={<LightSide />} />
+        <Route path="/LightSide/:id" element={<DisplayCard />} />
         <Route path="/Teaser" element={<Teaser />} />
         <Route path="/Questions" element={<Questions />}/>
       </Routes>
