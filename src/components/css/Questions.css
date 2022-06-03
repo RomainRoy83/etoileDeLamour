@@ -1,0 +1,51 @@
+  .question-count {
+      padding-bottom: 5%;
+      font-style: italic;
+  }
+
+  .box-quizz {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 350px;
+      width: 65% ;
+      background-image: url("https://cdn.pixabay.com/photo/2018/12/18/22/30/background-3883188_960_720.jpg");
+      background-size: cover;
+      color: #e2e2e2;
+      font-size: 18px;
+      border-radius: 10px;
+      
+
+  }
+
+  #p-title {
+      padding-bottom: 16px;
+  }
+
+  .question-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5%;
+
+  }
+
+  button {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: #000000;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 14px 24px 16px;
+    margin: 0% 3%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+   
+    }
+
+
+
+
