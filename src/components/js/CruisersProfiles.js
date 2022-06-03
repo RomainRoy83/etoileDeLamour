@@ -33,6 +33,7 @@ function CruisersProfiles(props) {
         ) {
     
          return (
+
          <div key={index}>
             <div className="chara-img-container">
             <img
@@ -72,6 +73,7 @@ function CruisersProfiles(props) {
         })}
       </div>
       </div>
+    
   );
 }
 
