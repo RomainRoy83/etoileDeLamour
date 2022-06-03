@@ -1,11 +1,12 @@
-import "../css/DarkSide.css";
+import React from "react";
+import CruisersProfiles from "../../components/js/CruisersProfiles";
 
-const DarkSide = () => {
-    return (
-      <div className="DarkSide">
-        <h1>Welcome to the darkside  !</h1>
-      </div>
-    );
-  };
-  
-  export default DarkSide;
+function DarkSide() {
+  return (
+    <div className="CroisiereLove">
+      <CruisersProfiles version="Galactic Empire" />
+    </div>
+  );
+}
+
+export default DarkSide;

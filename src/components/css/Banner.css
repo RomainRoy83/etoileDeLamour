@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'Sucrose Bold Two';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sucrose.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'IM Fell French Canon Pro';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/im-fell-french-canon-pro.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.bannerDark {
+  background: url(../assets/BannerDark.png) no-repeat;
+  background-size: cover;
+  font-family: 'Sucrose Bold Two';
+  padding-top: 45%;
+}
+
+.bannerDark img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  margin: 10px 0px 0px 0px;
+}
+
+.bannerDark h1 {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 10vw;
+  line-height: .8;
+  margin-top: 0;
+  text-align: center;
+}
+
+.bannerDark h1 span {
+  display: block;
+  font-size: 8.75vw;
+}
+
+.bannerLight {
+  background: url(../assets/BannerLight.png) no-repeat;
+  background-size: cover;
+  padding: 16%;
+  font-family: 'Sucrose Bold Two';
+  
+  /* height: 333px; */
+  /* background-size: cover;
+  padding-top: 45%; */
+
+}
+
+.bannerLight img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  margin: 10px 0px 0px 0px;
+
+}
+
+.bannerLight h1 {
+  position: fixed;
+  top: 2rem;
+  right: 65rem;
+  font-size: 4vw;
+  line-height: .9;
+  margin-top: 0;
+  text-align: center;
+}
+
+.bannerLight h1 span {
+  display: block;
+  font-size: 5vw;
+}
