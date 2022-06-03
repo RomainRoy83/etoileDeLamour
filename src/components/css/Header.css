@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 9vh;
+    background-image: url(https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=850&q=80);
+}
+
+.header-links {   
+    display: flex;
+    justify-content:flex-end ;
+    
+}
+.header-links a {
+    font-size: 25px;
+    text-decoration: rgb(235, 229, 229);
+    
+}
+
+.home {
+    height: 9vh;
+    /* display: flex;
+    width: 12%; */
+} 
+.dark { 
+    height: 9vh;
+    clip-path: inset(0px 14px);
+    border-radius: 21px;
+    
+    
+}
+.light {
+    height: 9vh;
+    clip-path: inset(0px 14px);
+    border-radius: 21px;
+}
