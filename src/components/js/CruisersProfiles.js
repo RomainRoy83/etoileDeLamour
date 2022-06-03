@@ -20,6 +20,7 @@ function CruisersProfiles(props) {
 
   return (
     <div className="container-global">
+      <h1 class = "cruiser-title">Vous aurez la chance de partager votre croisière avec...</h1>
       <div className="chara-container">
         {characters
 
@@ -35,16 +36,17 @@ function CruisersProfiles(props) {
 
          <div key={index}>
             <div className="chara-img-container">
-            <Link to={`/LightSide/${character.id}`}> <img
+            <img
             className="chara-img"
             src={character.image}
             alt={character.name}
-            /></Link>
+            />
             </div>
             <p className="chara-name">{character.name}</p>
-            <a className="coeur profile-btn" onClick={() => {handleClick(character.id)}} >
+            <Link to={`/LightSide/${character.id}`} className="coeur profile-btn">
+
             En savoir plus
-            </a>
+          </Link>
            
 
            {/* <div className=" profile-card inactif" id={character.id}>
