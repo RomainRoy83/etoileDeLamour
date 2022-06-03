@@ -1,9 +1,12 @@
+import Activities from "../../components/js/Activities";
+import HomepageBanner from "../../components/js/HomepageBanner";
 import Questions from "../../components/js/Questions";
 import "../css/HomePage.css";
 
 const Home = () => {
   return (
     <>
+    <HomepageBanner />
       <section class="star-wars">
         <div class="crawl">
           <div class="title">
@@ -40,6 +43,7 @@ const Home = () => {
           <Questions />
         </div>
       </section>
+      <Activities />
     </>
   );
 };

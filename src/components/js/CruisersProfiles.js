@@ -70,7 +70,6 @@ function CruisersProfiles(props) {
         })}
       </div>
       </div>
-    </div>
   );
 }
 

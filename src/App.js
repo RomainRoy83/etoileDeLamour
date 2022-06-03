@@ -1,9 +1,7 @@
-
-import Banner from './components/js/Banner'
+import DisplayCard from './screens/js/DisplayCard'
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/js/Header";
 import Home from "./screens/js/HomePage";
-import HomepageBanner from './components/js/HomepageBanner';
 import DarkSide from "./screens/js/DarkSide";
 import Questions from './components/js/Questions.js';
 import LightSide from "./screens/js/LightSide";
@@ -14,10 +12,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Banner type={'light'} />
-
       <Header />
-      <HomepageBanner />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/DarkSide" element={<DarkSide />} />
