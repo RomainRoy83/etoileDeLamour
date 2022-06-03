@@ -16,15 +16,15 @@
 
 .banner img {
     position: absolute;
-    top: 0;
+    top: 9%;
     right: 0;
     width: 100%;
 }
 
 .banner h1 { 
     position: fixed;
-    color: rgb(230, 230, 230);
-    top: 2rem;
+    color: rgb(58, 11, 159);
+    top: 8rem;
     right: 4rem;
     font-size: 6vw;
     line-height: .8;
