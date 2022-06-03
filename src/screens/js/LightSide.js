@@ -1,6 +1,5 @@
-import React from 'react';
+import React from "react";
 import CruisersProfiles from "../../components/js/CruisersProfiles";
-
 
 function LightSide() {
   return (

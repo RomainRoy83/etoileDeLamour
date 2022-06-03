@@ -11,20 +11,19 @@ function CruisersProfiles(props) {
       .then((res) => setCharacters(res), []);
   });
 
-  const profileBtn = document.querySelector(".profile-btn")
+  // const profileBtn = document.querySelector(".profile-btn");
 
   const handleClick = (elt) => {
-    const profile = document.getElementById(elt)
-    profile.classList.toggle("inactif")
-  }
+    const profile = document.getElementById(elt);
+    profile.classList.toggle("inactif");
+  };
 
   return (
-
     <div className="container-global">
       <div className="chara-container">
         {characters
 
-        .filter((character) => character.affiliations.includes(props.version))
+          .filter((character) => character.affiliations.includes(props.version))
 
         .map((character, index) => {
         if (
@@ -71,7 +70,8 @@ function CruisersProfiles(props) {
         })}
       </div>
       </div>
-  )
+    </div>
+  );
 }
 
 export default CruisersProfiles;
