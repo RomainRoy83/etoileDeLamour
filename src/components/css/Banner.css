@@ -28,12 +28,12 @@ body {
   top: 0;
   right: 0;
   width: 100%;
-  margin: 10px 0px 0px 0px;
+  margin: 57px 0px 0px 0px;
 }
 
 .bannerDark h1 {
   position: fixed;
-  top: 2rem;
+  top: 4rem;
   right: 2rem;
   font-size: 10vw;
   line-height: .8;
