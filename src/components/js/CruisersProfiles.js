@@ -32,6 +32,7 @@ function CruisersProfiles(props) {
         ) {
     
          return (
+
          <div key={index}>
             <div className="chara-img-container">
             <Link to={`/LightSide/${character.id}`}> <img
@@ -70,6 +71,7 @@ function CruisersProfiles(props) {
         })}
       </div>
       </div>
+    
   );
 }
 
