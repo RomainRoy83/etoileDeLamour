@@ -28,12 +28,20 @@ body {
   top: 0;
   right: 0;
   width: 100%;
+<<<<<<< HEAD
   margin: 370px 0px 0px 0px;
+=======
+  margin: 10px 0px 0px 0px;
+>>>>>>> dev
 }
 
 .bannerDark h1 {
   position: fixed;
+<<<<<<< HEAD
   top: 8rem;
+=======
+  top: 2rem;
+>>>>>>> dev
   right: 2rem;
   font-size: 10vw;
   line-height: .8;
@@ -60,8 +68,13 @@ body {
 
 .bannerLight img {
   position: absolute;
+<<<<<<< HEAD
   top: 70px;
   right: -16px;
+=======
+  top: 0;
+  right: 0;
+>>>>>>> dev
   width: 100%;
   margin: 10px 0px 0px 0px;
 
@@ -69,8 +82,13 @@ body {
 
 .bannerLight h1 {
   position: fixed;
+<<<<<<< HEAD
   top: 6rem;
   right: 4rem;
+=======
+  top: 2rem;
+  right: 65rem;
+>>>>>>> dev
   font-size: 4vw;
   line-height: .9;
   margin-top: 0;
