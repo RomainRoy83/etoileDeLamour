@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 9vh;
+    background-color: black;
+}
+
+.header-links {   
+    display: flex;
+    justify-content:flex-end ;
+    
+}
+.home {
+    height: 9vh;
+    clip-path: inset(10px 20px);
+} 
+.dark { 
+    height: 9vh;
+    clip-path: inset(10px 20px);
+}
+.light {
+    height: 9vh;
+    clip-path: inset(10px 20px);
+}

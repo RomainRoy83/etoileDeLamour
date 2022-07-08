@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Sucrose Bold Two';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sucrose.woff2') format('woff2');
+    }
+
+.banner {
+    background: url('../assets/space.jpg') no-repeat;
+    background-size: cover;
+    padding-top: 47%;
+    font-family: 'Sucrose Bold Two';
+    overflow: hidden;
+}
+
+.banner img {
+    position: absolute;
+    top: 9%;
+    right: 0;
+    width: 100%;
+}
+
+.banner h1 { 
+    position: fixed;
+    color: #f2f2f2;
+    top: 8rem;
+    right: 4rem;
+    font-size: 4vw;
+    line-height: .8;
+    margin-top: 0;
+    text-align: center;
+}
+
+.banner h1 span {
+    display: block;
+    font-size: 4vw;
+}
